@@ -1,16 +1,19 @@
+//{
+//    "extends": ["next/core-web-vitals", "next/typescript", "prettier"],
+//    "plugins": ["prettier"],
+//    "rules": {
+//        "prettier/prettier": [
+//            "error",
+//            {
+//                "singleQuote": true, // Prettier의 작은 따옴표 규칙을 ESLint에 맞춤
+//                "semi": true,
+//                "trailingComma": "es5",
+//                "printWidth": 80,
+//                "tabWidth": 4
+//            }
+//        ]
+//    }
+//}
 {
-    "extends": ["next/core-web-vitals", "next/typescript", "prettier"],
-    "plugins": ["prettier"],
-    "rules": {
-        "prettier/prettier": [
-            "error",
-            {
-                "singleQuote": true, // Prettier의 작은 따옴표 규칙을 ESLint에 맞춤
-                "semi": true,
-                "trailingComma": "es5",
-                "printWidth": 80,
-                "tabWidth": 4
-            }
-        ]
-    }
+  "extends": "next/core-web-vitals"
 }

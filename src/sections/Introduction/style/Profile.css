@@ -1,0 +1,10 @@
+/* Profile.css */
+.profile-container {
+    width: 350px;
+    margin-right: 100px;
+}
+
+.profile-image {
+    width: 100%;
+    border-radius: 50%; /* 둥글게 만들기 */
+}
