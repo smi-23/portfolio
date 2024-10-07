@@ -5,7 +5,7 @@ export default function AboutMe() {
   const commonFontSize = '2em';
 
   return (
-    <Stack sx={{ width: 700 }}>
+    <Stack sx={{ width: 650 }}>
       <Typography component='span' sx={{ fontSize: commonFontSize }}>
         안녕하세요!
       </Typography>
