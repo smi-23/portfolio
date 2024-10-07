@@ -1,10 +1,29 @@
-import Introduction from '@/sections/Introduction';
+import Introduction from '../sections/introduction';
+import Header from '@/sections/header';
+import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
 
 export default function Home() {
   return (
-    <main>
-      <h2>hello world</h2>
-      <Introduction />
-    </main>
+    <Box
+      sx={{
+        backgroundColor: '#e0e0e0', // 바깥쪽 색상
+        padding: '20px', // 안쪽 여백
+      }}
+    >
+      <Container
+        maxWidth="lg"
+        sx={{
+          backgroundColor: '#ffffff', // 컨테이너 내부 배경색
+          border: '1px solid #ccc', // 경계선 추가
+          borderRadius: '8px', // 경계선 둥글게 처리
+          padding: '16px', // 컨테이너 안쪽 여백
+        }}
+      >
+        <h2>hello world</h2>
+        <Header />
+        <Introduction />
+      </Container>
+    </Box>
   );
 }

@@ -1,8 +1,8 @@
 'use client';
 
 import { Grid } from '@mui/system';
-import Profile from '@/sections/Introduction/view/Profile';
-import AboutMe from '@/sections/Introduction/view/AboutMe';
+import Profile from '@/sections/introduction/view/Profile';
+import AboutMe from '@/sections/introduction/view/AboutMe';
 
 export default function Introduction() {
   return (
@@ -11,7 +11,11 @@ export default function Introduction() {
       direction={'row'}
       justifyContent={'center'}
       alignItems={'center'}
-      // sx={{margin:"auto"}}
+      sx={{
+        height: "80vh",
+        mx: "auto",
+        // paddingBottom: 5,
+    }}
     >
       <Grid item>
         <Profile />

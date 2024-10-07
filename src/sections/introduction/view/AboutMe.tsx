@@ -22,7 +22,10 @@ export default function AboutMe() {
             width:"7.5em"
           }}
         />
-        <span style={{ fontSize: commonFontSize, marginLeft: '8px' }}> {/* 여백 추가 */}
+        <span style={{
+          fontSize: commonFontSize,
+          // marginLeft: '1px'
+        }}>
           개발자가 되기 위해 노력하는
         </span>
       </Stack>
