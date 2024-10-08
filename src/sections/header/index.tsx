@@ -6,6 +6,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { Menu, MenuList } from '@/data/menu';
 import MenuBar from '@/sections/header/view/MenuBar';
+import SocialBar from '@/sections/header/view/SocialBar';
+import { Social, SocialList } from '@/data/social';
 
 export default function Header() {
   return (
@@ -26,9 +28,11 @@ export default function Header() {
               <MenuBar key={menu.title} title={menu.title} />
             ))}
           </Box>
-          <Typography variant='h6' component='div' sx={{}}>
-            이 부분엔 소셜
-          </Typography>
+          <Box sx={{ display: 'flex'}}>
+            {SocialList.map((social: Social) => (
+              <SocialBar tooltip={social.tooltip} url={social.url} icon={social.icon} />
+            ))}
+          </Box>
         </Toolbar>
       </AppBar>
     </Box>
