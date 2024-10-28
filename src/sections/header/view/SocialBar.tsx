@@ -29,10 +29,10 @@ export default function SocialBar({ tooltip, icon: CustomIcon, url }: Social) {
         </IconButton>
       </Tooltip>
       <Snackbar
-        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+        anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
         open={open}
         onClose={() => setOpen(false)}
-        message={`이메일 ${url} 이 복사되었습니다.`}
+        message={`${url} 이 복사되었습니다.`}
         autoHideDuration={2000} // 2초 후 자동으로 사라짐
       />
     </>

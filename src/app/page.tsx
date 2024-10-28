@@ -1,7 +1,7 @@
 import Introduction from '../sections/introduction';
-import Header from '@/sections/header';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
+import MySkills from '@/sections/mySkills';
 
 export default function Home() {
   return (
@@ -20,9 +20,8 @@ export default function Home() {
           padding: '16px', // 컨테이너 안쪽 여백
         }}
       >
-        <h2>hello world</h2>
-        <Header />
         <Introduction />
+        <MySkills />
       </Container>
     </Box>
   );
